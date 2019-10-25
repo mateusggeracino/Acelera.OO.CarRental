@@ -7,7 +7,7 @@ namespace Acelera.OO.CarRental.Models.Adicionais
         public Cadeirinha()
         {
             Nome = nameof(Cadeirinha);
-            Valor = 25m;
+            Valor = 75m;
         }
     }
 }
