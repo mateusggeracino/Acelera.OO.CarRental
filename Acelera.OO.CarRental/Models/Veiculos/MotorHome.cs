@@ -4,12 +4,13 @@ using Acelera.OO.CarRental.Models.Veiculos.Base;
 
 namespace Acelera.OO.CarRental.Models.Veiculos
 {
-    public class Carro : IVeiculo
+    public class MotorHome : IVeiculo
     {
-        public Carro(List<IAdicional> adicionais = null) => Adicionais = adicionais;
-        public int KmAtual => 120;
-        public decimal ValorDiaria => 50m;
-        public decimal ValorKm => 0.5m;
+        public MotorHome(List<IAdicional> adicionais = null) => Adicionais = adicionais;
+
+        public int KmAtual => 1200;
+        public decimal ValorDiaria => 300m;
+        public decimal ValorKm => 0.65m;
 
         public List<IAdicional> Adicionais { get; }
     }

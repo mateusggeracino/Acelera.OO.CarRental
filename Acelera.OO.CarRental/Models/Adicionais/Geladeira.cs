@@ -2,11 +2,11 @@
 
 namespace Acelera.OO.CarRental.Models.Adicionais
 {
-    public class Geladeira : AdicionalCarroHomeBase
+    public class Geladeira : IAdicional
     {
-        public Geladeira()
-        {
-            Valor = 75m;
-        }
+        public Geladeira(decimal valor) => Valor = valor;
+
+        public string Nome => "Geladeira";
+        public decimal Valor { get; }
     }
 }

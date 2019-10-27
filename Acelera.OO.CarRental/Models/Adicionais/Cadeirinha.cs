@@ -2,12 +2,11 @@
 
 namespace Acelera.OO.CarRental.Models.Adicionais
 {
-    public class Cadeirinha : AdicionalCarroBase
+    public class Cadeirinha : IAdicional
     {
-        public Cadeirinha()
-        {
-            Nome = nameof(Cadeirinha);
-            Valor = 75m;
-        }
+        public Cadeirinha(decimal valor) => Valor = valor;
+        
+        public string Nome => "Cadeirinha";
+        public decimal Valor { get; }
     }
 }

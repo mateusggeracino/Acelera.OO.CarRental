@@ -4,11 +4,9 @@ namespace Acelera.OO.CarRental.Models.Adicionais
 {
     public class Gps : IAdicional
     {
-        public Gps()
-        {
-            Valor = 25m;
-        }
-        public string Nome { get; set; }
-        public decimal Valor { get; set; }
+        public Gps(decimal valor) => Valor = valor;
+
+        public string Nome => "GPS";
+        public decimal Valor { get; }
     }
 }

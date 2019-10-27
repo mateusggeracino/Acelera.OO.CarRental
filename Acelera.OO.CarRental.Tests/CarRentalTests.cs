@@ -14,16 +14,10 @@ namespace Acelera.OO.CarRental.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            var carroHome = new CarroHome
-            {
-                Adicionais = new List<IAdicional>
-                {
-                    new Gps(),
-                    new Geladeira()
-                }
-            };
+            var motorHomeAd = new List<IAdicional> { new Geladeira(250m), new Gps(35m) };
+            var motorHome = new MotorHome(motorHomeAd);
 
-            var locacao = new Locacao(2, 850, carroHome);
+            var locacao = new Locacao(new DateTime(2019, 10, 21), new DateTime(2019, 10, 23), motorHome, 850);
 
             Console.WriteLine(locacao.ToString());
             Console.ReadKey();

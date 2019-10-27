@@ -2,7 +2,7 @@
 {
     public interface IAdicional
     {
-        string Nome { get; set; }
-        decimal Valor { get; set; }
+        string Nome { get; }
+        decimal Valor { get;  }
     }
 }
