@@ -6,7 +6,6 @@ namespace Acelera.OO.CarRental.Models.Veiculos.Base
     public interface IVeiculo
     {
         string Tipo { get; }
-        int KmAtual { get;  }
         decimal ValorDiaria { get; }
         decimal ValorKm { get;}
         List<IAdicional> Adicionais { get; }
