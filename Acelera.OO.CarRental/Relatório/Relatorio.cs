@@ -5,7 +5,7 @@ using Acelera.OO.CarRental.Models.Aluguel;
 
 namespace Acelera.OO.CarRental.Relatório
 {
-    public class Relatorio
+    public sealed class Relatorio
     {
         public static string Imprimir(Aluguel aluguel)
         {

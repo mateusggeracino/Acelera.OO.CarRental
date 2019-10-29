@@ -2,7 +2,7 @@
 
 namespace Acelera.OO.CarRental.Models.Adicionais
 {
-    public class Geladeira : Adicional
+    public sealed class Geladeira : Adicional
     {
         public Geladeira() => AdicionarNome("Geladeira");
     }
