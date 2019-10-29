@@ -24,12 +24,13 @@ namespace Acelera.OO.CarRental.Tests
                 "Valores de todos os adicionais: GPS: R$ 35 Geladeira: R$ 250 \n" +
                 "Valor total do aluguel: R$ 1437.50";
 
-            var motorHome = new MotorHome()
+            var motorHome =
+                MotorHome.Novo()
                 .AdicionarAdicional<Gps>(35m)
                 .AdicionarAdicional<Geladeira>(250m);
 
-            var dataSaida = DateTime.Now;
-            var dataRetorno = DateTime.Now.AddDays(2);
+            var dataSaida = new DateTime(2019, 10, 21);
+            var dataRetorno = new DateTime(2019, 10, 23);
 
             var aluguel = new Aluguel(dataSaida, dataRetorno, motorHome, 850);
 

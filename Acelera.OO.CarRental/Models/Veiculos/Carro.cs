@@ -6,6 +6,9 @@ namespace Acelera.OO.CarRental.Models.Veiculos
 {
     public sealed class Carro : Veiculo
     {
+        private Carro() { }
+
+        public static Carro Novo() => new Carro();
         public override string Tipo => "Carro";
         public override decimal ValorDiaria => 50m;
         public override decimal ValorKm => 0.5m;
